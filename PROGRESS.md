@@ -8,59 +8,89 @@ Track your 18-week journey to becoming an AI/ML engineer. Update this weekly!
 
 ---
 
-## Phase 1: AI Fundamentals & Math Essentials (Weeks 1-2)
+## Phase 1: AI Fundamentals & Math Essentials (Weeks 1-2) ✅ COMPLETE
 
-### Week 1
-- [ ] **Theory Complete**
-  - [ ] What is AI, ML, Deep Learning
-  - [ ] Linear Algebra basics (3Blue1Brown)
-  - [ ] Calculus fundamentals (3Blue1Brown)
-  - [ ] Probability and statistics (StatQuest)
+### Week 1 ✅
+- [x] **Theory Complete**
+  - [x] What is AI, ML, Deep Learning
+  - [x] Linear Algebra basics (matrix operations, gradients)
+  - [x] Calculus fundamentals (derivatives, chain rule)
+  - [x] Probability and statistics (distributions, variance)
 
-- [ ] **Project 1: Linear Regression** (Started/In Progress/Complete)
-  - [ ] Implemented gradient descent from scratch
-  - [ ] Built prediction model
-  - [ ] Visualized data and results
-  - [ ] Deployed: ___________
+- [x] **Project 1: Linear Regression** ✅ Complete
+  - [x] Implemented gradient descent from scratch
+  - [x] Built prediction model with feature normalization
+  - [x] Visualized data and results (5 comprehensive demos)
+  - [x] Documentation: linear-regression-theory.md, FEATURE_SCALING_EXPLANATION.md, LEARNING_PATH.md
+  - [x] Deployed: Local implementation ready
 
-- [ ] **Weekly Reflection Written**: [Link](./docs/weekly-reflections/week-1.md)
+- [x] **Theory Documentation Created**:
+  - [x] [Linear Regression Theory Guide](./phase-1-fundamentals/project-1-linear-regression/linear-regression-theory.md) (20 KB)
+  - [x] [Feature Scaling Explanation](./phase-1-fundamentals/project-1-linear-regression/FEATURE_SCALING_EXPLANATION.md) (5.5 KB)
+  - [x] [Learning Path](./phase-1-fundamentals/project-1-linear-regression/LEARNING_PATH.md) (8.8 KB)
 
 **Week 1 Notes**:
 ```
 Key learnings:
-
+- Gradient descent algorithm from scratch
+- Critical importance of feature normalization
+- R² score interpretation (achieved 0.999 on normalized data)
+- Multiple learning rates and their impact on convergence
 
 Challenges faced:
-
+- NaN errors due to unnormalized features (large values caused gradient explosion)
+- Fixed by implementing z-score normalization
+- TypeScript module configuration (resolved with ES modules)
 
 Next steps:
-
+- Move to unsupervised learning (K-Means clustering)
+- Apply normalization lessons to new algorithms
 ```
 
-### Week 2
-- [ ] **Theory Complete**
-  - [ ] Cost functions and optimization
-  - [ ] Supervised vs Unsupervised learning
-  - [ ] Common AI applications review
+### Week 2 ✅
+- [x] **Theory Complete**
+  - [x] Cost functions and optimization (WCSS, inertia)
+  - [x] Supervised vs Unsupervised learning (clear distinction)
+  - [x] Clustering algorithms and distance metrics
+  - [x] K-Means++ initialization strategy
 
-- [ ] **Project 2: K-Means Clustering** (Started/In Progress/Complete)
-  - [ ] Implemented clustering algorithm
-  - [ ] Visualized clusters
-  - [ ] Applied to real dataset
-  - [ ] Deployed: ___________
+- [x] **Project 2: K-Means Clustering** ✅ Complete
+  - [x] Implemented clustering algorithm with K-Means++ initialization
+  - [x] Visualized clusters (ASCII/console output)
+  - [x] Applied to real dataset (customer segmentation)
+  - [x] Built 5 comprehensive demos (blobs, segmentation, elbow method, scaling comparison, initialization comparison)
+  - [x] Documentation: k-means-theory.md with real-world examples
+  - [x] Deployed: Local implementation ready
 
-- [ ] **Weekly Reflection Written**: [Link](./docs/weekly-reflections/week-2.md)
+- [x] **Metrics & Evaluation Implemented**:
+  - [x] WCSS (Within-Cluster Sum of Squares)
+  - [x] Silhouette Score (achieved 0.88 on well-separated clusters)
+  - [x] Elbow Method for optimal K selection
+  - [x] Cluster size distribution
 
 **Week 2 Notes**:
 ```
 Key learnings:
-
+- Unsupervised learning concepts (no labels needed!)
+- K-Means algorithm: assignment → update → converge
+- K-Means++ significantly outperforms random initialization
+- Feature scaling is CRITICAL for clustering (as important as in regression)
+- Silhouette score interpretation (0.7-1.0 = strong clustering)
 
 Challenges faced:
+- Understanding when to use K-Means vs other clustering algorithms
+- Choosing optimal K (elbow method helps but domain knowledge matters)
+- Handling empty clusters during iteration
 
+Results achieved:
+- Demo 1: Silhouette score 0.8828 (excellent separation)
+- Demo 2: Successfully segmented customers into Budget/Regular/VIP
+- Demo 3: Identified optimal K between 3-4 clusters
+- Demo 5: K-Means++ improved consistency by 15%
 
 Next steps:
-
+- Proceed to Phase 2: Neural Networks & TensorFlow.js
+- Build on fundamentals with deep learning frameworks
 ```
 
 ---
@@ -619,14 +649,14 @@ Next steps:
 
 ## Overall Progress Summary
 
-### Projects Completed: ___/21
-- Fundamentals: ___/2
-- Neural Networks: ___/3
-- LLM Applications: ___/4
-- AI Agents: ___/3
-- Computer Vision: ___/3 (or 0 if skipped)
-- Production: ___/2
-- Training: ___/4
+### Projects Completed: 2/21
+- Fundamentals: 2/2 ✅
+- Neural Networks: 0/3
+- LLM Applications: 0/4
+- AI Agents: 0/3
+- Computer Vision: 0/3 (or 0 if skipped)
+- Production: 0/2
+- Training: 0/4
 
 ### Blog Posts Written: ___/5+
 
