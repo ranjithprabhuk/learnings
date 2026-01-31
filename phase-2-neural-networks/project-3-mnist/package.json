@@ -7,6 +7,7 @@
     "build": "tsc",
     "start": "npm run build && node dist/index.js",
     "demo": "npm run build && node dist/demo.js",
+    "demo:simple": "npm run build && node dist/demo-simple.js",
     "demo:train": "npm run build && node dist/demo-train.js",
     "demo:predict": "npm run build && node dist/demo-predict.js",
     "demo:visualize": "npm run build && node dist/demo-visualize.js",
@@ -23,11 +24,12 @@
   ],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "@tensorflow/tfjs-node": "^4.15.0"
-  },
   "devDependencies": {
     "@types/node": "^20.10.0",
     "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "node-fetch": "^2.7.0"
   }
 }

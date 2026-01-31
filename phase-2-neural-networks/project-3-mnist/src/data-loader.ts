@@ -1,4 +1,5 @@
-import * as tf from '@tensorflow/tfjs-node';
+import * as tf from '@tensorflow/tfjs';
+import fetch from 'node-fetch';
 
 export interface MNISTData {
   trainImages: tf.Tensor;
@@ -16,7 +17,7 @@ export class DataLoader {
   private readonly IMAGE_SIZE = 784; // 28x28
   private readonly NUM_CLASSES = 10;
   private readonly MNIST_IMAGES_URL =
-    'https://storage.googleapis.com/cvdf-datasets/mnist/';
+    'https://storage.googleapis.com/learnjs-data/model-builder/';
 
   /**
    * Load MNIST dataset
